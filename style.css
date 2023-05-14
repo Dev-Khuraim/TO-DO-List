@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#add {
+    filter: brightness(0) invert(1);
+  }
+body{
+    width: 100vw;
+    height: 100vh;
+    /* position: relative; */
+
+}
+main{
+    width: 100%;
+    height: 100%;
+    background-color: #758283;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    width: 70%;
+    height: 85%;
+    position: relative;
+    background-color: white;
+    box-shadow: 3px 2px 3px #0D0D0D;
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    background-color:#f1e0e7;
+}
+.box .input{
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    min-height: 10%;
+    outline: none;
+    background-color: #6A1B4D;
+    box-shadow: 0px 3px 3px black;
+    border: none;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10px;
+}
+.box input{
+    width: 80%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 100%;
+    outline: none;
+    padding: 10px;
+    background-color: transparent;
+    color: white;
+    border: none;
+}
+.box input::placeholder{
+    color: white;
+}
+.box .input img{
+    width: 32px;
+    height: 39px;
+   display: none;
+    position: relative;
+    top: 4px;
+    cursor: pointer;
+}
+.box .input img:hover{
+    transform: scale(0.9);
+    transition: 0.6s ease-in-out;
+}
+ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    position: relative;
+    height: 90%;  
+}
+ul li{
+    box-shadow: 0px 4px 2px black;
+    border: none;
+    width: 100%;
+    /* height: 10%; */
+   min-height: 10%;
+overflow-y: scroll;
+    display: flex;
+    align-items: center;
+    padding: 9px 0px;
+    position: relative;
+    cursor: pointer;
+    background-color: #c9bdbd;
+    transition: 0.8s ease-in-out;
+overflow: hidden;
+    
+    
+}
+ul li input[type='checkbox']{
+width: 30px;
+height: 15px;
+display: none;
+transition: 0.8s ease-in-out;
+
+
+}
+ul li p{
+    width: 70%;
+    position: relative;
+    margin-right: 200px;
+    outline: none;
+    padding-left: 20px;
+    overflow-y: scroll;
+    scrollbar-width: thin;
+    scrollbar-color: transparent transparent;
+   height: 100%;
+   transition: 0.8s ease-in-out;
+}
+ul li p::-webkit-scrollbar{
+    display: none;
+}
+ul li img{
+    width: 32px;
+height: 23px;
+transition: 0.8s ease-in-out;
+   
+
+}
+ul li img:hover{
+    transform: scale(0.9);
+    transition: 0.8s;
+}
+ul li span{
+    position: absolute;
+    top: 1px;
+    padding-right: 5px;
+    padding-left: 5px;
+    border-radius: 4px;
+    display: none;
+    transition: 0.8s ease-in-out;
+}
+ul li span:hover{
+    box-shadow: 1px 1px black;
+    transition: 0.3s ease-in-out;
+}
